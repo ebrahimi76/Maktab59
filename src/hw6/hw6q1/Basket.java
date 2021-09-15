@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Basket {
 
     private final Scanner input = new Scanner(System.in);
+    private Products products;
     private int[] data;
 
     public Basket() {

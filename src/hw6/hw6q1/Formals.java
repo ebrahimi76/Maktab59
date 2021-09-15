@@ -7,4 +7,8 @@ public class Formals extends Shoe {
         super(name, size, price);
         this.type = type;
     }
+
+    public String getType() {
+        return type;
+    }
 }

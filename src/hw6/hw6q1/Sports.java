@@ -7,4 +7,8 @@ public class Sports extends Shoe {
         super(name, size, price);
         this.used = used;
     }
+
+    public String getUsed() {
+        return used;
+    }
 }

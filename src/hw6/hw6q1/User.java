@@ -68,4 +68,7 @@ public class User {
         emailAddress = input.next();
     }
 
+    public Address getAddress() {
+        return address;
+    }
 }

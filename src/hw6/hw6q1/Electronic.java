@@ -10,4 +10,8 @@ public class Electronic {
         device[2] = type;
         device[3] = String.valueOf(size);
     }
+
+    public String[] getDevice() {
+        return device;
+    }
 }

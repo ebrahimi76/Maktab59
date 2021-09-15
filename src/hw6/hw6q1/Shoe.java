@@ -10,4 +10,7 @@ public class Shoe {
         shoe[2] = String.valueOf(size);
     }
 
+    public String[] getShoe() {
+        return shoe;
+    }
 }

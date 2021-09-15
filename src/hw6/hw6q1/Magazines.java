@@ -8,5 +8,14 @@ public class Magazines extends Book {
         this.version = version;
         this.company = company;
     }
+
+    public int getVersion() {
+        return version;
+    }
+
+    public String getCompany() {
+        return company;
+    }
 }
+
 

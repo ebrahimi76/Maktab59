@@ -9,4 +9,12 @@ public class Books extends Book{
         this.author = author;
         this.pages = page;
     }
+
+    public int getPages() {
+        return pages;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
 }

@@ -8,4 +8,7 @@ public class Book {
         book[1] = name;
     }
 
+    public String[] getBook() {
+        return book;
+    }
 }

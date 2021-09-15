@@ -8,4 +8,8 @@ public class Televisions extends Electronic {
         super(name, type, size, price);
         this.resolotion = resolotion;
     }
+
+    public String getResolotion() {
+        return resolotion;
+    }
 }
