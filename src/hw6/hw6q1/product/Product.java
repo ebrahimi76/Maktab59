@@ -1,6 +1,7 @@
 package hw6.hw6q1.product;
 
 public class Product {
+
     private String name;
     private int price;
 

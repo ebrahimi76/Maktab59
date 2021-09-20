@@ -1,5 +1,6 @@
-package hw6.hw6q1;
+package hw6.hw6q1.site;
 
+import hw6.hw6q1.product.Product;
 import hw6.hw6q1.product.publish.Books;
 import hw6.hw6q1.product.publish.Magazines;
 import hw6.hw6q1.product.electronic.Radios;
@@ -8,36 +9,12 @@ import hw6.hw6q1.product.shoe.Formals;
 import hw6.hw6q1.product.shoe.Sports;
 
 public class Products {
-    private Books[] books = new Books[3];
-    private Magazines[] magazines = new Magazines[2];
-    private Sports[] sports = new Sports[4];
-    private Formals[] formals = new Formals[3];
-    private Televisions[] televisions = new Televisions[2];
-    private Radios[] radios = new Radios[3];
-
-    public Books[] getBooks() {
-        return books;
-    }
-
-    public Magazines[] getMagazines() {
-        return magazines;
-    }
-
-    public Sports[] getSports() {
-        return sports;
-    }
-
-    public Formals[] getFormals() {
-        return formals;
-    }
-
-    public Televisions[] getTelevisions() {
-        return televisions;
-    }
-
-    public Radios[] getRadios() {
-        return radios;
-    }
+    private Product[] books = new Books[3];
+    private Product[] magazines = new Magazines[2];
+    private Product[] sports = new Sports[4];
+    private Product[] formals = new Formals[3];
+    private Product[] televisions = new Televisions[2];
+    private Product[] radios = new Radios[3];
 
     public void setProducts() {
         books[0] = new Books("1984", "George Orwell", 328, 21530);
