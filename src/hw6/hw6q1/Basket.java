@@ -67,7 +67,7 @@ public class Basket {
             System.out.println("Enter the correct number!");
     }
 
-    public int[] find() {
+    public void find() {
         int[] dataFind = new int[1];
         int subject;
         int type;
@@ -78,7 +78,7 @@ public class Basket {
             type = input.nextInt();
             if (type == 1) {
                 System.out.println("Enter the desired product number:");
-                dataFind = products.getBooks()[input.nextInt()];
+//                dataFind = products.getBooks()[input.nextInt()];
             } else {
                 System.out.println("Enter the desired product number:");
 

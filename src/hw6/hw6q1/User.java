@@ -1,5 +1,8 @@
 package hw6.hw6q1;
 
+import hw6.hw6q1.Basket;
+import hw6.hw6q1.user.Address;
+
 import java.util.Scanner;
 
 public class User {
@@ -29,7 +32,7 @@ public class User {
     public void setPassword() {
         System.out.println("Enter a password: ");
         password = input.next();
-        ;
+
     }
 
     public String getFirstName() {
