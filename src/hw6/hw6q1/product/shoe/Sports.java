@@ -12,4 +12,14 @@ public class Sports extends Shoe {
     public String getUsed() {
         return used;
     }
+
+    @Override
+    public String toString() {
+        return "Sports{" +
+                "name='" + super.getName() + '\'' +
+                ", price='" + super.getPrice() + '\'' +
+                ", size='" + super.getSize() + '\'' +
+                ", used='" + used + '\'' +
+                "}\n";
+    }
 }

@@ -12,4 +12,15 @@ public class Radios extends Electronic {
     public String getColor() {
         return color;
     }
+
+    @Override
+    public String toString() {
+        return "Radios{" +
+                "name='" + super.getName() + '\'' +
+                ", price='" + super.getPrice() + '\'' +
+                ", type='" + super.getType()+ '\'' +
+                ", size='" + super.getSize() + '\'' +
+                "color='" + color + '\'' +
+                "}\n";
+    }
 }

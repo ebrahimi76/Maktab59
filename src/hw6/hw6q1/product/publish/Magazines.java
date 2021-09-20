@@ -18,4 +18,14 @@ public class Magazines extends Publish {
     public String getCompany() {
         return company;
     }
+
+    @Override
+    public String toString() {
+        return "Magazines{" +
+                "name='" + super.getName() + '\'' +
+                ", price='" + super.getPrice() + '\'' +
+                ", version='" + version + '\'' +
+                ", company='" + company +  '\'' +
+                "}\n";
+    }
 }

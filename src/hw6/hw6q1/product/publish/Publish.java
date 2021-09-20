@@ -8,4 +8,11 @@ public class Publish extends Product {
         super(name, price);
     }
 
+    @Override
+    public String toString() {
+        return "Publish{" +
+                "name='" + super.getName() + '\'' +
+                ", price='" + super.getPrice() + '\'' +
+                "}";
+    }
 }

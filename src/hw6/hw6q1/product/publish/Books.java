@@ -18,4 +18,14 @@ public class Books extends Publish {
     public String getAuthor() {
         return author;
     }
+
+    @Override
+    public String toString() {
+        return "Books{" +
+                "name='" + super.getName() + '\'' +
+                ", price='" + super.getPrice() + '\'' +
+                ", pages='" + pages + '\'' +
+                ", author='" + author +  '\'' +
+                "}\n";
+    }
 }

@@ -8,6 +8,8 @@ import hw6.hw6q1.product.electronic.Televisions;
 import hw6.hw6q1.product.shoe.Formals;
 import hw6.hw6q1.product.shoe.Sports;
 
+import java.util.Arrays;
+
 public class Products {
     private Product[] books = new Books[3];
     private Product[] magazines = new Magazines[2];
@@ -39,5 +41,17 @@ public class Products {
         radios[0] = new Radios("Golon", "Desktop", 13, "RED", 222000);
         radios[1] = new Radios("Meier", "Desktop", 23, "DARK-BROWN", 608000);
         radios[2] = new Radios("Sony", "Pocket", 13, "BLACK", 1300000);
+    }
+
+    @Override
+    public String toString() {
+        return "Products:" +
+                "\nbooks=\n" + Arrays.toString(books) +
+                ", magazines=\n" + Arrays.toString(magazines) +
+                ", sports=\n" + Arrays.toString(sports) +
+                ", formals=\n" + Arrays.toString(formals) +
+                ", televisions=\n" + Arrays.toString(televisions) +
+                ", radios=\n" + Arrays.toString(radios)
+                ;
     }
 }

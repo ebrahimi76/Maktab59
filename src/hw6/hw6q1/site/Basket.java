@@ -120,14 +120,7 @@ public class Basket {
     }
 
     public void print() {
-        if (data.length == 0)
-            System.out.print("Data: []\n");
-        else {
-            System.out.print("Data: [");
-            for (int i = 0; i < data.length - 1; i++)
-                System.out.print(data[i] + ", ");
-            System.out.print(data[data.length - 1] + "]\n");
-        }
+
     }
 
 }

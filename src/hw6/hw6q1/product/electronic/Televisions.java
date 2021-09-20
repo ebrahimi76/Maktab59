@@ -12,4 +12,15 @@ public class Televisions extends Electronic {
     public String getResolotion() {
         return resolotion;
     }
+
+    @Override
+    public String toString() {
+        return "Televisions{" +
+                "name='" + super.getName() + '\'' +
+                ", price='" + super.getPrice() + '\'' +
+                ", type='" + super.getType()+ '\'' +
+                ", size='" + super.getSize() + '\'' +
+                "resolotion='" + resolotion + '\'' +
+                "}\n";
+    }
 }
