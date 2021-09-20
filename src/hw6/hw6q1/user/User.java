@@ -1,11 +1,11 @@
-package hw6.hw6q1;
+package hw6.hw6q1.user;
 
 import hw6.hw6q1.Basket;
-import hw6.hw6q1.user.Address;
 
 import java.util.Scanner;
 
 public class User {
+
     private Scanner input = new Scanner(System.in);
     private String username;
     private String password;
@@ -16,62 +16,68 @@ public class User {
     private Address address;
     private Basket basket;
 
+    public Scanner getInput() {
+        return input;
+    }
+
+    public void setInput(Scanner input) {
+        this.input = input;
+    }
+
     public String getUsername() {
         return username;
     }
 
-    public void setUsername() {
-        System.out.println("Enter a username: ");
-        username = input.next();
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
         return password;
     }
 
-    public void setPassword() {
-        System.out.println("Enter a password: ");
-        password = input.next();
-
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName() {
-        System.out.println("Enter a first name: ");
-        firstName = input.next();
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName() {
-        System.out.println("Enter a last name: ");
-        lastName = input.next();
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public int getMobileNumber() {
         return mobileNumber;
     }
 
-    public void setMobileNumber() {
-        System.out.println("Enter a mobile number: ");
-        mobileNumber = input.nextInt();
+    public void setMobileNumber(int mobileNumber) {
+        this.mobileNumber = mobileNumber;
     }
 
     public String getEmailAddress() {
         return emailAddress;
     }
 
-    public void setEmailAddress() {
-        System.out.println("Enter a e-mail: ");
-        emailAddress = input.next();
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
     }
 
     public Address getAddress() {
         return address;
     }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
 }

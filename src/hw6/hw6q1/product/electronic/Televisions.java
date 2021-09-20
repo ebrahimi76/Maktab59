@@ -1,5 +1,4 @@
-package hw6.hw6q1;
-
+package hw6.hw6q1.product.electronic;
 
 public class Televisions extends Electronic {
     private String resolotion;

@@ -1,5 +1,12 @@
 package hw6.hw6q1;
 
+import hw6.hw6q1.product.publish.Books;
+import hw6.hw6q1.product.publish.Magazines;
+import hw6.hw6q1.product.electronic.Radios;
+import hw6.hw6q1.product.electronic.Televisions;
+import hw6.hw6q1.product.shoe.Formals;
+import hw6.hw6q1.product.shoe.Sports;
+
 public class Products {
     private Books[] books = new Books[3];
     private Magazines[] magazines = new Magazines[2];

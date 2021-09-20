@@ -1,4 +1,4 @@
-package hw6.hw6q1;
+package hw6.hw6q1.product.electronic;
 
 public class Radios extends Electronic {
     private String color;

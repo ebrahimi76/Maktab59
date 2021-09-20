@@ -1,6 +1,6 @@
-package hw6.hw6q1;
+package hw6.hw6q1.product.publish;
 
-public class Magazines extends Book {
+public class Magazines extends Publish {
     private int version;
     private String company;
     public Magazines(String name, String company,int version, int price) {

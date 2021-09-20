@@ -1,6 +1,6 @@
-package hw6.hw6q1;
+package hw6.hw6q1.product.publish;
 
-public class Books extends Book{
+public class Books extends Publish {
     private int pages;
     private String author;
 
