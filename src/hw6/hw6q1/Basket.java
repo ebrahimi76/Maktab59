@@ -12,8 +12,9 @@ public class Basket {
         data = new int[1];
 
 
-
         System.out.print("Enter number " + "th: ");
+
+
         data[0] = input.nextInt();
     }
 
@@ -66,7 +67,45 @@ public class Basket {
             System.out.println("Enter the correct number!");
     }
 
-    public void find() {
+    public int[] find() {
+        int[] dataFind = new int[1];
+        int subject;
+        int type;
+        System.out.println("SELECT: 1.Book, 2.Electronic, 3.Shoe");
+        subject = input.nextInt();
+        if (subject == 1) {
+            System.out.println("SELECT: 1.books, 2.magazines");
+            type = input.nextInt();
+            if (type == 1) {
+                System.out.println("Enter the desired product number:");
+                dataFind = products.getBooks()[input.nextInt()];
+            } else {
+                System.out.println("Enter the desired product number:");
+
+            }
+        } else if (subject == 2) {
+            System.out.println("SELECT: 1.televisions, 2.radios");
+            type = input.nextInt();
+            if (type == 1) {
+                System.out.println("Enter the desired product number:");
+
+            } else {
+                System.out.println("Enter the desired product number:");
+
+            }
+        } else if (subject == 3) {
+            System.out.println("SELECT: 1.sports, 2.formals");
+            type = input.nextInt();
+            if (type == 1) {
+                System.out.println("Enter the desired product number:");
+
+            } else {
+                System.out.println("Enter the desired product number:");
+
+            }
+        }
+
+
         System.out.print("Enter your number: ");
         int val = input.nextInt();
         int count = 0;
