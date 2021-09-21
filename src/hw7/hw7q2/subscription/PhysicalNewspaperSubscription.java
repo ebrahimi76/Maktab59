@@ -1,8 +1,6 @@
 package hw7.hw7q2.subscription;
 
 public class PhysicalNewspaperSubscription extends NewspaperSubscription {
-    public PhysicalNewspaperSubscription() {
-    }
 
     public PhysicalNewspaperSubscription(String name) {
         super(name);
@@ -11,7 +9,7 @@ public class PhysicalNewspaperSubscription extends NewspaperSubscription {
     @Override
     public void setAddress(String address) {
         address = address.trim();
-        if(checkStringHaveDigit(address)){
+        if(check(address)){
             super.address=address;
             setPrice(15);
         }else{
@@ -25,7 +23,7 @@ public class PhysicalNewspaperSubscription extends NewspaperSubscription {
         super.price=price;
     }
 
-    private boolean checkStringHaveDigit(String str){
+    private boolean check(String str){
         for (int i = 0; i < str.length(); i++) {
             if(str.charAt(i)>='0' && str.charAt(i)<='9')
                 return true;

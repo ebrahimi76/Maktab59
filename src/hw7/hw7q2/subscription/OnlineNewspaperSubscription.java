@@ -1,8 +1,6 @@
 package hw7.hw7q2.subscription;
-public class OnlineNewspaperSubscription extends NewspaperSubscription {
-    public OnlineNewspaperSubscription() {
-    }
 
+public class OnlineNewspaperSubscription extends NewspaperSubscription {
     public OnlineNewspaperSubscription(String name) {
         super(name);
     }
@@ -10,8 +8,8 @@ public class OnlineNewspaperSubscription extends NewspaperSubscription {
     @Override
     public void setAddress(String address) {
         address = address.trim();
-        if(checkStringToHaveAtSign(address)){
-            super.address=address;
+        if(check(address)){
+            super.address= address;
             setPrice(9);
         }else{
             super.address="Error";
@@ -24,7 +22,7 @@ public class OnlineNewspaperSubscription extends NewspaperSubscription {
         super.price=price;
     }
 
-    private boolean checkStringToHaveAtSign(String str){
+    private boolean check(String str){
         return str.contains("@");
     }
 
