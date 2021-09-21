@@ -9,14 +9,12 @@ public class ConfigConnect {
     public static final String URL = "jdbc:mysql://localhost:3306/School";
     public static final String USERNAME = "root";
     public static final String PASSWORD = "";
-    public static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 
     public static Connection creatConnection() throws SQLException {
         MysqlDataSource datasource = new MysqlDataSource();
         datasource.setURL(URL);
         datasource.setPassword(PASSWORD);
         datasource.setUser(USERNAME);
-        Connection connection = datasource.getConnection();
-        return connection;
+        return datasource.getConnection();
     }
 }

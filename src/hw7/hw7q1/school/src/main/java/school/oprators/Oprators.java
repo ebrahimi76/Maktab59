@@ -40,7 +40,7 @@ public class Oprators {
         preparedStatement.executeUpdate();
     }
 
-    public void delete() throws SQLException{
+    public void delete() throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement(QUERY3);
         System.out.println("Enter id: ");
         preparedStatement.setInt(1, input.nextInt());
