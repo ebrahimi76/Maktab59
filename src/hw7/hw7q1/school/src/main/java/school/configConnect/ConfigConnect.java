@@ -6,7 +6,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class ConfigConnect {
-    public static final String URL = "jdbc:mysql://localhost:3306/sql_hr";
+    public static final String URL = "jdbc:mysql://localhost:3306/School";
     public static final String USERNAME = "root";
     public static final String PASSWORD = "";
     public static final String DRIVER = "com.mysql.cj.jdbc.Driver";
