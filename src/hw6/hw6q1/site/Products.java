@@ -43,6 +43,30 @@ public class Products {
         radios[2] = new Radios("Sony", "Pocket", 13, "BLACK", 1300000);
     }
 
+    public Product[] getBooks() {
+        return books;
+    }
+
+    public Product[] getMagazines() {
+        return magazines;
+    }
+
+    public Product[] getSports() {
+        return sports;
+    }
+
+    public Product[] getFormals() {
+        return formals;
+    }
+
+    public Product[] getTelevisions() {
+        return televisions;
+    }
+
+    public Product[] getRadios() {
+        return radios;
+    }
+
     @Override
     public String toString() {
         return "Products:" +

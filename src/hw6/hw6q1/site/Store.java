@@ -8,6 +8,7 @@ public class Store {
     private Scanner scanner=new Scanner(System.in);
     Products products = new Products();
     User user = new User();
+    Basket basket = new Basket();
     public void run() {
         products.setProducts();
         user.setUser();
